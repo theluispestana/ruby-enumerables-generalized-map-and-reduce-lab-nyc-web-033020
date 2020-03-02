@@ -10,5 +10,11 @@ def map (array)
 end
 
 def reduce (array, starting_point = 0)
-  
+  new = []
+  i = starting_point
+  while i < array.length do
+    new << yield(array[i])
+    i += 1
+  end
+  new
 end
