@@ -6,4 +6,5 @@ def map (array)
     new << yield(array[i])
     i += 1
   end
+  new
 end
