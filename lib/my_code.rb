@@ -10,7 +10,11 @@ def map (array)
 end
 
 def reduce (array, starting_point = nil)
-  new = 0
+  if starting_point
+    new = starting_point
+  else
+    new = 0
+  end 
   i = 0
   while i < array.length do
     new = yield(starting_point, array[i])
