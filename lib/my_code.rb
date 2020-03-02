@@ -1,4 +1,4 @@
 # Your Code Here
 def map (array)
-  array.yield
+  new_array = array.yield
 end
