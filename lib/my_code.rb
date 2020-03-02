@@ -14,10 +14,10 @@ def reduce (array, starting_point = nil)
     new = starting_point
   else
     new = 0
-  end 
+  end
   i = 0
   while i < array.length do
-    new = yield(starting_point, array[i])
+    new = yield(new, array[i])
     i += 1
   end
   new
